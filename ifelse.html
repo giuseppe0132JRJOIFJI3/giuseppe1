@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script type="text/javascript">
+        function prodotto(a,b)
+        {
+            return a*b;
+        }
+    </script>
+</head>
+<body>
+    <script type="text/javascript">
+        var d = new Date() ;
+        var time = d.getHours() ;
+            if (time>10)
+                {
+                    document.write("<b>Good morning</b>") ;
+                }
+
+            else if (time<=10 && time<16)
+                {
+                    document.write("<b>Good day</b>") ;
+                }
+            else
+                {
+                    document.write("<b>Hello world!</b>") ;
+                }
+    </script>
+
+ 
+    <script type="text/javascript">
+        var per = new Function("a" , "b" , "return a*b;") ;
+        document.write(per(4,3));
+        document.write("<br>");
+        document.write(prodotto(4,3));
+    </script>
+    <p>thi si an example demostrates the if else if else starement. </p>
+</body>
+</html>

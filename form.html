@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/tabella.css" type="text/css">
+</head>
+
+<body>
+    <form action="https://www.uniba.it/" method="get">
+        <h1>profilazione</h1>
+        <fieldset>
+            <legend>dati anagrafici</legend>
+                <label id="cognome">cognome</label>
+                    <input type="text" maxlength="30" size="30" placeholder="inserisci qui il tuo cognome" name="cognome"><br>
+                    <!--il name serve per far apparire nella pagina uniba il nome -->
+                <label>nome</label>
+                    <input maxlength="30" size="30" placeholder="inserisci qui il tuo nome" name="nome"> <br>
+                <label>provincia</label>
+                    <select name="provincia">
+                        <option value="ba">bari</option>
+                        <option value="bat">bat</option>
+                        <option value="br">brindisi</option>
+                        <option value="fg">foggia</option>
+                        <option value="le">lecce</option>
+                        <option value="ta">taranto</option>
+                    </select>
+                <label>password</label>
+                    <input type="password" name="password">
+                <label>data di nascita</label>
+                    <input type="date" placeholder="inserisci la data" name="datanascita"> <!--nel name non bisogna lasciare lo spazio-->
+                <label>email</label>
+                    <input type="email">
+                <label>allega la tua foto</label>
+                    <input type="file" name="allegato" multiple>
+         </fieldset>
+
+
+        <fieldset>
+            <legend>indagine</legend>
+                <label>che colore ti piace?</label>
+                    <input type="color" name="colore"><br>
+                <textarea name="commento" id="" cols="40" rows="10" placeholder="hai commenti"></textarea> <br>
+                <hr>
+
+            <legend>quanti libri hai letto in un anno</legend> <br>
+                <input type="radio" name="libri" value="zerocinque" checked>0-5 <br>
+                <input type="radio"name="libri" value="seidieci">6-10 <br>
+                <input type="radio"name="libri" value="dieciquindici">10-15 <br>
+
+            <legend>che quotidiani leggi?</legend>
+                <input type="checkbox" name="quotidiani" value="repubblica">repubblica <br>
+                <input type="checkbox" name="quotidiani" value="gazzetta">gazzetta <br>
+                <input type="checkbox" name="quotidiani" value="libero">libero <br>
+                <input type="checkbox" name="quotidiani" value="ilquotidiano">il quotidiano <br>
+
+            <legend>secondo te quale il miglior quotidiano</legend>
+                <input list="migliore">
+                    <datalist id="migliore">
+                        <option value="repubblica"></option>
+                        <option value="casa"></option>
+                        <option value="nulla"></option>
+                        <option value="blabla"></option>
+                    </datalist>
+               
+
+
+        </fieldset>
+        <button type="submit">INVIA</button> <button type="reset">reset</button>
+
+    </form>
+
+</body>
+
+</html>

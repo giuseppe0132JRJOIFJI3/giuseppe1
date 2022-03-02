@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calcolatore età</title>
+    <link rel="stylesheet" href="/MioServer/src/javascript1.js">
+
+    <script type="text/javascript">
+        function a(annoNascita) {
+            var d = new Date();
+            var annoAttuale = d.getFullYear();
+            var eta = annoAttuale - annoNascita
+            document.write("<p>la tua eta è:" + eta + "</p>")
+            var annichemancanoa100 = 100 - eta
+            document.write("<p>a 100 anni mancano:" + annichemancanoa100 + "</p>")
+        }
+        var annodiNascita = prompt("inserisci anno di nascita");
+        a(annodiNascita);
+    </script>
+</head>
+
+
+<body>
+
+
+</body>
+
+</html>
